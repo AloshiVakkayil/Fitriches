@@ -223,7 +223,7 @@
 (function() {
   // Configuration
   const config = {
-    wordpressUrl: 'https://fitriches.com/wp-json/wp/v2/posts',
+    wordpressUrl: 'https://staging-8fad-clickbanksiva82.wpcomstaging.com/wp-json/wp/v2/posts',
     categoryId: 1382,
     postsPerPage: 3,
     defaultImage: 'assets/img/blog/default-image.jpg',
