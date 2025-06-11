@@ -341,7 +341,7 @@
           <h4>Couldn't Load Blog Posts</h4>
           <p>${config.fallbackMessage}</p>
           ${error.message ? `<p class="small text-muted mt-2">Error: ${error.message}</p>` : ''}
-          <a href="https://fitriches.com/blog/" class="btn btn-outline-primary mt-3">
+          <a href="https://staging-8fad-clickbanksiva82.wpcomstaging.com/blog/" class="btn btn-outline-primary mt-3">
             Visit Our Blog
           </a>
         </div>

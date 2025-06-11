@@ -323,7 +323,7 @@
     // Fetch and display blog posts from WordPress API
     document.addEventListener("DOMContentLoaded", function () {
       const postsContainer = document.getElementById("posts-container");
-      const baseUrl = "https://fitriches.com/wp-json/wp/v2/posts?_embed&per_page=100";
+      const baseUrl = "https://staging-8fad-clickbanksiva82.wpcomstaging.com/wp-json/wp/v2/posts?_embed&per_page=100";
 
       // Show loading spinner
       postsContainer.innerHTML = `<div class="loading-spinner text-center w-100 py-5">
@@ -391,7 +391,7 @@
   }
   
   // Base URL with optional category filter
-  let baseUrl = "https://fitriches.com/wp-json/wp/v2/posts?_embed&per_page=100";
+  let baseUrl = "https://staging-8fad-clickbanksiva82.wpcomstaging.com/wp-json/wp/v2/posts?_embed&per_page=100";
   if (categoryFilter) {
     baseUrl += `&categories=${getCategoryId(categoryFilter)}`;
   }
@@ -479,7 +479,7 @@
     document.getElementById("globalSearchInput").addEventListener("input", function () {
   const query = this.value.trim();
   const postsContainer = document.getElementById("posts-container");
-  const baseUrl = `https://fitriches.com/wp-json/wp/v2/posts?_embed&per_page=100&search=${encodeURIComponent(query)}`;
+  const baseUrl = `https://staging-8fad-clickbanksiva82.wpcomstaging.com/wp-json/wp/v2/posts?_embed&per_page=100&search=${encodeURIComponent(query)}`;
 
   // Show loading spinner
   postsContainer.innerHTML = `<div class="loading-spinner text-center w-100 py-5">
