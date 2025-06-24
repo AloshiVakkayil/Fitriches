@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Health & Wealth | Fitriches</title>
+  <meta name="description" content="Health and wealth related articles to improve your well-being and financial freedom">
+  <meta name="keywords" content="health, wealth, fitness, finance, wellness, money">
+
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  
+  <style>
+    /* Health & Wealth specific styling */
+    .health-wealth-card {
+      border-left: 4px solid #4e9c81;
+    }
+    .health-wealth-card:hover {
+      transform: rotateX(2deg) translateY(-10px) scale(1.02);
+      box-shadow: 0 18px 28px rgba(78, 156, 129, 0.15);
+    }
+    .health-category {
+      color: #4e9c81;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body class="health-wealth-page">
+
+  <header id="header" class="header fixed-top">
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="https://x.com/i/flow/login" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://www.facebook.com/login.php/" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/accounts/login/" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/login" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="branding d-flex align-items-cente">
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+            <img src="src/assests/img/fitriches (1).png" alt="Fitriches Logo" style="height: 220px; width: auto;">
+          <h1 class="sitename">Fitriches</h1>
+          <span>.</span>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Home<br></a></li>
+            <li><a href="healthWealth.html" class="active">Health & Wealth</a></li>
+            <li><a href="entertainment.html">Entertainment</a></li>
+            <li><a href="shoppingCart.html">Shop with us</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>Health & Wealth</h1>
+              <p class="mb-0">Discover expert advice on improving your physical well-being and achieving financial freedom. Our health and wealth articles provide practical tips, evidence-based strategies, and inspiring stories to help you create a balanced, fulfilling life where your wellness and prosperity grow together.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Health & Wealth</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <!-- Blog Posts Section -->
+    <section>
+      <div class="container">
+        <div class="row g-4" id="posts-container">
+          <!-- Health posts will load here -->
+          <div class="loading-spinner text-center w-100 py-5">
+            <div class="spinner-border text-primary" role="status">
+              <span class="visually-hidden">Loading Health Articles...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer accent-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Fitriches</span>
+          </a>
+          <p>Empowering your journey to better health and financial freedom through practical advice and inspiring stories.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://x.com/i/flow/login" class="text-dark me-3" target="_blank" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 1200 1227">
+                <path d="M1050 0 714 525l486 702H750L480 882l-222 345H0l354-549L-30 0h504l216 339L900 0h150Zm-222 1095h126L423 132H291l537 963Z"/>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/login.php/" class="text-dark me-3" target="_blank" aria-label="Facebook">
+              <i class="bi bi-facebook" style="font-size: 1.2rem;"></i>
+            </a>
+            <a href="https://www.instagram.com/accounts/login/" class="text-dark me-3" target="_blank" aria-label="Instagram">
+              <i class="bi bi-instagram" style="font-size: 1.2rem;"></i>
+            </a>
+            <a href="https://www.linkedin.com/login" class="text-dark" target="_blank" aria-label="LinkedIn">
+              <i class="bi bi-linkedin" style="font-size: 1.2rem;"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="healthWealth.html">Health & Wealth</a></li>
+            <li><a href="travel.html">Travel</a></li>
+            <li><a href="entertainment.html">Entertainment</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p class="mt-4"><strong>Phone:</strong> <span>+1437 929 7485</span></p>
+          <p><strong>Email:</strong> <span>fitrichesweb@gmail.com</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Fitriches</strong> <span>All Rights Reserved</span></p>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Initialize AOS
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out'
+      });
+
+      const postsContainer = document.getElementById("posts-container");
+      
+      // Replace HEALTH_CATEGORY_ID with your actual WordPress health category ID
+      const HEALTH_CATEGORY_ID = 1382; // Change this to your actual health category ID
+      const baseUrl = `https://staging-8fad-clickbanksiva82.wpcomstaging.com/wp-json/wp/v2/posts?_embed&categories=1382&per_page=100`;
+
+
+      // Show loading spinner
+      postsContainer.innerHTML = `<div class="loading-spinner text-center w-100 py-5">
+        <div class="spinner-border text-primary" role="status">
+          <span class="visually-hidden">Loading Health Articles...</span>
+        </div>
+      </div>`;
+
+      const fetchHealthPosts = async (page = 1) => {
+        try {
+          const response = await fetch(`${baseUrl}&page=${page}`);
+          const posts = await response.json();
+
+          // Remove spinner once data starts coming in
+          if (page === 1) postsContainer.innerHTML = "";
+
+          if (posts.length === 0 && page === 1) {
+            postsContainer.innerHTML = `
+              <div class="col-12 text-center py-5">
+                <h4>No health articles found</h4>
+                <p>Check back soon for new content!</p>
+              </div>
+            `;
+            return;
+          }
+
+          posts.forEach((post, index) => {
+            const title = post.title.rendered;
+            const link = post.link;
+            const date = new Date(post.date).toLocaleDateString('en-US', { 
+              year: 'numeric', 
+              month: 'short', 
+              day: 'numeric' 
+            });
+            const author = post._embedded.author[0].name;
+            
+            // Get featured image or use default health image
+            const featuredImage = post._embedded['wp:featuredmedia']?.[0]?.source_url || 
+              'src/assests/img/default-health.jpg';
+
+            const postHTML = `
+              <div class="col-lg-4 col-md-6 d-flex animate-fade-up" style="animation-delay: ${index * 0.1}s">
+                <div class="card blog-card health-wealth-card text-start flex-fill">
+                  <img src="${featuredImage}" class="card-img-top" alt="${title}" style="height: 200px; object-fit: cover;">
+                  <div class="card-body d-flex flex-column">
+                    <p class="health-category mb-1 fw-semibold small">Health & Wealth</p>
+                    <h5 class="card-title mb-2">
+                      <a href="${link}" class="text-dark text-decoration-none">${title}</a>
+                    </h5>
+                    <p class="card-text mt-auto">
+                      <small class="text-muted">By ${author} • ${date}</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            `;
+            postsContainer.insertAdjacentHTML("beforeend", postHTML);
+          });
+
+          if (posts.length === 100) {
+            fetchHealthPosts(page + 1);
+          }
+
+        } catch (error) {
+          console.error("Error fetching health posts:", error);
+          postsContainer.innerHTML = `
+            <div class="col-12 text-center py-5">
+              <p>Unable to load health articles at this time.</p>
+              <button onclick="window.location.reload()" class="btn btn-primary">Try Again</button>
+            </div>
+          `;
+        }
+      };
+
+      fetchHealthPosts();
+    });
+  </script>
+</body>
+</html>

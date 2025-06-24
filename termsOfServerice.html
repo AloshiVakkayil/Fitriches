@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service | Fitriches</title>
+  <meta name="description" content="Fitriches Terms of Service">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  
+  <style>
+    :root {
+      --primary-color: #008374; /* Changed from blue to teal green */
+      --secondary-color: #006a5d; /* Darker shade of primary */
+      --text-color: #333;
+      --light-gray: #f8f9fa;
+      --medium-gray: #e9ecef;
+      --dark-gray: #6c757d;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--text-color);
+      line-height: 1.6;
+      background-color: #fff;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    header {
+      background-color: var(--primary-color); /* Changed to teal green */
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+    
+    .logo {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      color: white; /* Changed to white for contrast */
+      text-decoration: none;
+    }
+    
+    .logo span {
+      color: rgba(255,255,255,0.8); /* Lighter white for the dot */
+    }
+    
+    .terms-hero {
+      background: linear-gradient(135deg, #e6f6f4 0%, #c2ece7 100%); /* Light teal gradient */
+      padding: 80px 0;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    
+    .terms-hero h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 42px;
+      font-weight: 700;
+      color: var(--primary-color);
+      margin-bottom: 20px;
+    }
+    
+    .terms-hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--dark-gray);
+    }
+    
+    .terms-content {
+      padding: 0 0 80px;
+    }
+    
+    .terms-section {
+      margin-bottom: 50px;
+    }
+    
+    .terms-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 28px;
+      font-weight: 600;
+      color: var(--primary-color);
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--medium-gray);
+    }
+    
+    .terms-section h3 {
+      font-size: 22px;
+      font-weight: 600;
+      margin: 30px 0 15px;
+      color: var(--secondary-color);
+    }
+    
+    .terms-section p, .terms-section ul {
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+    
+    .terms-section ul {
+      padding-left: 20px;
+    }
+    
+    .terms-section li {
+      margin-bottom: 10px;
+    }
+    
+    .highlight-box {
+      background-color: var(--light-gray);
+      border-left: 4px solid var(--primary-color);
+      padding: 20px;
+      margin: 25px 0;
+      border-radius: 0 4px 4px 0;
+    }
+    
+    footer {
+      background-color: var(--primary-color); /* Changed to match header */
+      color: white;
+      padding: 50px 0 30px;
+    }
+    
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .footer-section {
+      flex: 1;
+      min-width: 250px;
+      margin-bottom: 30px;
+    }
+    
+    .footer-section h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    
+    .footer-section p, .footer-section a {
+      color: rgba(255,255,255,0.8);
+      font-size: 14px;
+      line-height: 1.8;
+    }
+    
+    .footer-section a {
+      display: block;
+      margin-bottom: 10px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    .footer-section a:hover {
+      color: white;
+    }
+    
+    .copyright {
+      text-align: center;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin-top: 30px;
+      font-size: 14px;
+      color: rgba(255,255,255,0.7);
+    }
+    
+    /* Social icons in footer */
+    .social-links a {
+      color: white;
+      background: rgba(255,255,255,0.1);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      transition: all 0.3s;
+    }
+    
+    .social-links a:hover {
+      background: rgba(255,255,255,0.2);
+      transform: translateY(-3px);
+    }
+    
+    @media (max-width: 768px) {
+      .terms-hero h1 {
+        font-size: 32px;
+      }
+      
+      .terms-hero {
+        padding: 60px 0;
+      }
+      
+      .terms-section h2 {
+        font-size: 24px;
+      }
+      
+      .terms-section h3 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <img src="assets/img/fitriches (1).png" alt="Fitriches Logo" style="height: 220px; width: auto;">
+        <a href="index.html" class="logo">Fitriches<span>.</span></a>
+      </nav>
+    </div>
+  </header>
+  
+  <section class="terms-hero">
+    <div class="container">
+      <h1>Terms of Service</h1>
+      <p>Last updated: June 2023</p>
+    </div>
+  </section>
+  
+  <div class="container">
+    <main class="terms-content">
+        <main class="terms-content">
+            <section class="terms-section">
+              <h2>Overview</h2>
+              <p>This website is operated by Fitriches. Throughout the site, the terms "we", "us" and "our" refer to Fitriches. Fitriches provides this website, including all information, tools, and services, to you, the user. This is only possible if you accept all terms, conditions, policies, and notices stated here.</p>
+              
+              <p>By visiting our site and/or purchasing something from us, you engage in our "Service." You agree to be bound by the next terms and conditions ("Terms of Service", "Terms"). This includes extra terms and conditions and policies referenced here and/or available by hyperlink.</p>
+              
+              <div class="highlight-box">
+                <p>These Terms of Service apply to all users of the site. This includes users who are browsers, vendors, customers, merchants, and/or contributors of content.</p>
+              </div>
+              
+              <p>Please read these Terms of Service carefully before accessing or using our website. By accessing or using any part of the site, you agree to be bound by these Terms of Service. If you do not agree to all the terms and conditions of this agreement, do not access the website. You can't use any services.</p>
+              
+              <p>If these Terms of Service are considered an offer, acceptance is expressly limited to these Terms of Service. Any new features added to the current store shall be topic to the Terms of Service. New tools added to the current store shall also follow the Terms of Service.</p>
+              
+              <p>You can review the most current version of the Terms of Service at any time on this page. We reserve the right to update any part of these Terms of Service. We change or replace parts by posting updates and/or changes to our website. It is your responsibility to check this page periodically for changes. Your continued use of or access to the website after the posting of any changes means acceptance of those changes.</p>
+            </section>
+            
+            <section class="terms-section">
+              <h2>Online Store Terms</h2>
+              <p>You agree to these Terms of Service. You agree. You state that you are at least the age of majority in your state or province of residence. Alternatively, you confirm being the age of majority and giving consent for your minor dependents to use this site.</p>
+              
+              <p>You not use our products for any illegal or unauthorized purpose. You must not violate any laws in your jurisdiction, including but not limited to copyright laws, while using the Service. You must not send any worms or viruses or any code of a destructive nature.</p>
+              
+              <div class="highlight-box">
+                <p>A breach or violation of any of the Terms will result in an immediate termination of your Services.</p>
+              </div>
+            </section>
+            
+            <section class="terms-section">
+              <h2>General Conditions</h2>
+              <p>We reserve the right to refuse service to anyone for any reason at any time.</p>
+              
+              <p>You understand that your content (not including credit card information) be transferred unencrypted. It involve transmissions over various networks. It also involve changes to conform and adapt to technical requirements of connecting networks or devices. Credit card information is always encrypted during transfer over networks.</p>
+              
+              <p>You agree not to reproduce, duplicate, copy, sell, or resell any part of the Service. Do not exploit the use of the Service. Do not exploit access to the Service or any contact on the website through which the service is provided. Obtain express written permission by us before doing so.</p>
+              
+              <p>The headings used in this agreement are included for convenience only and will not limit or otherwise affect these Terms.</p>
+            </section>
+            
+            <section class="terms-section">
+              <h2>Accuracy, Completeness, and Timeliness of Information</h2>
+              <p>We are not responsible if information made available on this site is not precise, full or current. The material on this site is provided for general information only. It should not be relied upon or used as the sole basis for making decisions. Consult primary, more exact, more thorough, or more prompt sources of information. Any reliance on the material on this site is at your own risk.</p>
+              
+              <p>This site contain certain historical information. Historical information, necessarily, is not current and is provided for your reference only. We reserve the right to change the contents of this site at any time. We have no obligation to update any information on our site. You agree that it is your responsibility to check changes to our site.</p>
+            </section>
+            
+            <section class="terms-section">
+              <h2>Modifications of the Service and Prices</h2>
+              <p>Prices for our products are prone to change without notice. We reserve the right to change the Service at any time. This includes any part or content of it, and we do so without prior notice.</p>
+              
+              <div class="highlight-box">
+                <p>We shall not be liable to you or to any third-party for any modification. We are not liable for a price change, suspension, or discontinuance of the Service.</p>
+              </div>
+            </section>
+            
+            <section class="terms-section">
+              <h2>Products or Services (if applicable)</h2>
+              <p>Certain products or services be available exclusively online through the website. These products or services have limited quantities. They are liable to return or exchange only according to our Return Policy.</p>
+              
+              <p>We have made every effort to show the colors of our products accurately. We also strive to show the images as they at the store. We can't guarantee that your computer screen's showing of any color will be exact.</p>
+              
+              <p>We reserve the right to limit the sales of our products or Services to any person. We are not obligated to apply this limit. The sales restriction can apply to geographic regions or jurisdictions. We exercise this right on a case-by-case basis.</p>
+              
+              <p>We reserve the right to limit the quantities of any products or services that we offer. All descriptions of products or product pricing can change at any time. They can change without notice. We have the sole discretion to make these changes. We reserve the right to stop any product at any time. Any offer for any product or service made on this site is void where prohibited.</p>
+              
+              <div class="highlight-box">
+                <p>We do not guarantee the quality of any products, services, or information. We do not guarantee that other material you buy or obtain will meet your expectations. We also do not assure that any errors in the Service will be corrected.</p>
+              </div>
+            </section>
+            
+            <section class="terms-section">
+              <h2>Accuracy of Billing and Account Information</h2>
+              <p>We reserve the right to refuse any order you place with us. We, in our sole discretion, limit or cancel quantities purchased per person, per household or per order. These restrictions include orders placed by or under the same customer account. They involve the same credit card. Orders that use the same billing and/or shipping location also fall under these restrictions.</p>
+              
+              <p>If we change or cancel an order, we try to inform you. We will contact the e-mail and/or billing location/phone number given when the order was made. We reserve the right to limit or prohibit orders. Our sole judgment applies to orders placed by dealers, resellers or distributors.</p>
+              
+              <p>You agree to give current, full and correct buy and account information for all buys made at our store. You agree to supply current information about your account and other details. This includes updating your email location and credit card numbers and end dates. We need this information to finish your transactions and contact you as needed.</p>
+              
+              <p>For more detail, please review our Returns Policy.</p>
+            </section>
+            
+            <section class="terms-section">
+              <h2>Optional Tools</h2>
+              <p>We give you access to third-party tools over which we neither watch nor have any control nor feedback. You acknowledge and agree that we offer access to such tools 'as is' and 'as available.' We offer them without any warranties, representations, or conditions of any kind. We supply them without any endorsement.</p>
+              
+              <div class="highlight-box">
+                <p>We shall have no liability whatsoever arising from or relating to your use of optional third-party tools. Any use by you of optional tools offered through the site is entirely at your own risk. Use them at your own discretion.</p>
+              </div>
+              
+              <p>You should make sure that you are familiar with the terms. Approve the terms on which tools are provided by the relevant third-party provider(s). We also, in the future, offer new services and features through the website. This includes the release of new tools and resources. Such new features and/or services shall also be under these Terms of Service.</p>
+            </section>
+            
+            <section class="terms-section">
+              <h2>Third Party Links</h2>
+              <p>Certain content, products and services available via our Service include materials from third-parties. Third-party links on this site direct you to third-party websites that are not affiliated with us. We are not responsible for examining or evaluating the content or accuracy. We do not guarantee and will not have any liability or responsibility for any third-party materials or websites. We are also not responsible for any other materials, products, or services of third-parties.</p>
+              
+              <p>We are not liable for any harm or damages. These issues arise from purchasing or using goods, services, or resources. They also arise from any transactions made in connection with any third-party websites. Please review carefully the third-party's policies and practices and make sure you understand them before you engage in any deal. Complaints, claims, concerns, or questions about third-party products should be directed to the third-party.</p>
+            </section>
+            
+            <section class="terms-section">
+              <h2>User Comments, Feedback, and Other Submissions</h2>
+              <p>If, at our demand, you send certain specific submissions (for example contest entries), you agree to several terms. If you send creative ideas, suggestions, proposals, or plans without a demand from us, you also agree to these terms. This includes other materials as well. These materials be sent online, by email, by postal mail, or otherwise (collectively, 'comments').</p>
+              
+              <p>You agree that we edit, copy, publish, and distribute any comments you send to us. We can translate and use them in any medium at any time and without restriction. We have no obligation to keep any comments in confidence. We are not obliged to pay compensation for any comments. We do not have to respond to any comments.</p>
+              
+              <p>We oversee, edit, or remove content. We do this if we find it unlawful, offensive, threatening, or libelous. Content also be defamatory, pornographic, obscene, or otherwise objectionable. This also applies if the content violates any party's intellectual property or these Terms of Service.</p>
+              
+              <div class="highlight-box">
+                <p>You agree that your comments will not violate any third-party rights. This includes copyright, trademark, privacy, personality, or other personal or proprietary rights. You further agree that your comments will not contain libelous or otherwise unlawful material. They must not contain abusive or obscene material. Your comments should not contain any computer virus or other malware. Such content affect the operation of the Service or any related website in any way.</p>
+              </div>
+              
+              <p>You must not use a false e-mail contact. Do not pretend to be someone other than yourself. Do not mislead us or third-parties as to the origin of any comments. You are solely responsible for any comments you make and their accuracy. We take no responsibility and assume no liability for any comments posted by you or any third-party.</p>
+            </section>
+            
+            <section class="terms-section">
+              <h2>Personal Information</h2>
+              <p>Your submission of personal information through the store is governed by our Privacy Policy.</p>
+            </section>
+            
+            <section class="terms-section">
+              <h2>Errors, Inaccuracies and Omissions</h2>
+              <p>Occasionally, our site or the Service shows information with typographical errors. These errors can include inaccuracies or omissions. They relate to product descriptions, pricing, promotions, offers, product shipping charges, transit times, and availability. We reserve the right to correct any errors, inaccuracies, or omissions. We change or update information if any information in the Service or on any related website is inaccurate. We can also cancel orders at any time without prior notice. This can occur, including after you have submitted your order.</p>
+              
+              <p>We undertake no obligation to update information in the Service or on any related website. We do not need to amend or clarify information, including without limitation, pricing information, except as required by law. Do not assume all information has been modified. Do not assume information is updated automatically. An update or refresh date in the Service or on any related website does not guarantee current information.</p>
+            </section>
+            
+            <section class="terms-section">
+              <h2>Prohibited Uses</h2>
+              <p>There are multiple prohibitions as mentioned in the Terms of Service. You can't use the site or its content for several specific reasons. You are prohibited from using it for any unlawful activity.</p>
+              
+              <p>You can't use it:</p>
+              <ul>
+                <li>(a) for any unlawful purpose</li>
+                <li>(b) to ask others to carry out or join in any unlawful acts</li>
+                <li>(c) to violate any international, federal, provincial, or state regulations, rules, laws, or local ordinances</li>
+                <li>(d) to infringe upon our intellectual property rights or violate the intellectual property rights of others</li>
+                <li>(e) to harass, abuse, or insult, harm, defame, or slander, disparage or intimidate, or discriminate based on gender, sexual orientation, religion, ethnicity, race, age, national origin, or disability</li>
+                <li>(f) submitting false or misleading information</li>
+                <li>(g) to upload or send viruses or any other type of malicious code that will affect the functionality or operation of the Service, any related website, other websites, or the Internet</li>
+                <li>(h) to collect or track the personal information of others</li>
+                <li>(i) for spamming, phishing, pharming, pretexting, spidering, crawling, or scraping</li>
+                <li>(j) for any obscene or immoral purpose</li>
+                <li>(k) to interfere with or circumvent the security features of the Service, any related website, other websites, or the Internet</li>
+              </ul>
+              
+              <div class="highlight-box">
+                <p>We reserve the right to end your access to the Service. We can also end your access to any related website if you violate any of the prohibited uses.</p>
+              </div>
+            </section>
+            
+            <section class="terms-section">
+              <h2>Disclaimer of Warranties; Limitation of Liability</h2>
+              <p>We do not guarantee, represent or assure that your use of our service will be uninterrupted, prompt, secure or error-free. We do not guarantee that the results from using the service will be precise. They also not be reliable.</p>
+              
+              <p>You agree that we remove the service for indefinite periods. We can also cancel the service at any time, without notice to you. You expressly agree that your use of, or inability to use, the service is at your sole risk. The service is provided 'as is' and 'as available' for your use. All products and services delivered to you through the service are included. This is without any representation, warranties or conditions of any kind, either express or implied. This includes all implied warranties or conditions of merchantability. It also includes merchantable quality, fitness for a particular purpose, durability, title, and non-infringement. These conditions apply except as expressly stated by us.</p>
+              
+              <div class="highlight-box">
+                <p>Fitriches and our associated parties can't be held liable for any injury, loss, or claim. We are not responsible for any type of damages, including direct, indirect, or incidental. This includes punitive, special, or consequential damages of any kind. Examples of such damages are lost profits, lost revenue, or lost savings. We are also not liable for loss of data, replacement costs, or similar damages.</p>
+              </div>
+              
+              <p>These apply whether based on contract, tort, or otherwise. They arise from your use of the service or products obtained using the service. This also refers to any claim related to your use of the service or product. Claims include any errors or omissions in any content. They also cover loss or damage incurred as a result of using the service or content. Such claims hold, even if advised of their possibility.</p>
+              
+              <p>Some states or jurisdictions do not allow the exclusion or the limitation of liability for consequential or incidental damages. In such states or jurisdictions, our liability shall be limited to the fullest extent permitted by law.</p>
+            </section>
+            
+            <section class="terms-section">
+              <h2>Indemnification</h2>
+              <p>If you would like to access any personal information we have about you, please contact our Privacy Compliance Officer. You can also reach out to correct, amend, or remove your information. You can also reach out if you want to register a complaint or need more information. You can contact them at Fitrichesweb.gmail.com</p>
+            </section>
+            
+            <section class="terms-section">
+              <h2>Severability</h2>
+              <p>If any provision of these Terms of Service is determined to be unlawful, void, or unenforceable, it will stay enforceable. This enforcement is to the fullest extent permitted by applicable law. The unenforceable part shall be deemed severed from these Terms of Service. This determination shall not affect the validity and enforceability of the other remaining provisions.</p>
+            </section>
+            
+            <section class="terms-section">
+              <h2>Termination</h2>
+              <p>The obligations and liabilities of the parties incurred before the end date will survive the end of this agreement. This survival occurs for all purposes. These Terms of Service are effective unless and until ended by either you or us.</p>
+              
+              <p>You end these Terms of Service at any time. Inform us if you no longer wish to use our Services. You can also end by ceasing to use our site. If you fail to follow any term of these Terms of Service, we can end this agreement. This can happen at any time. We do this without notice and in our sole judgment. You will stay liable for all amounts due up to and including the date of termination. We also deny you access to our Services or any part of it.</p>
+            </section>
+            
+            <section class="terms-section">
+              <h2>Entire Agreement</h2>
+              <p>Not exercising or enforcing any right or provision of these Terms of Service does not waive it. These Terms of Service, along with any posted policies or operating rules, form the entire agreement between you and us. They govern your use of the Service. This agreement supersedes any prior agreements, communications, and proposals. It applies to both oral and written forms, including any prior versions of the Terms of Service.</p>
+              
+              <p>Any ambiguities in the interpretation of these Terms of Service shall not be construed against the drafting party.</p>
+            </section>
+            
+            <section class="terms-section">
+              <h2>Governing Law</h2>
+              <p>These Terms of Service and any separate agreements whereby we offer you Services shall be governed by the laws. They shall be construed according to the laws.</p>
+            </section>
+            
+            <section class="terms-section">
+              <h2>Changes to Terms of Service</h2>
+              <p>You can review the most current version of the Terms of Service at any time at this page. We reserve the right to update, change, or replace any part of these Terms of Service. This will be done at our sole discretion by posting updates and changes to our website. It is your responsibility to check our website periodically for changes.</p>
+              
+              <div class="highlight-box">
+                <p>You accept those changes if you continue to use our website. You also accept if you continue to use the Service after we post any changes to these Terms of Service. If you access our website or the Service after changes, you accept those changes. Your continued use indicates your acceptance.</p>
+              </div>
+            </section>
+            
+            <section class="terms-section">
+              <h2>Contact Information</h2>
+              <p>Questions about the Terms of Service should be sent to us at <a href="mailto:Fitrichesweb@gmail.com">Fitrichesweb@gmail.com</a></p>
+              
+              <p>Our returns policy lasts 30 days.</p>
+            </section>
+          </main>
+  </div>
+  
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Fitriches</h3>
+          <p>Your trusted guide for health, wealth, travel, and entertainment insights to enrich your daily life.</p>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="index.html">Home</a>
+          <a href="travel.html">Travel</a>
+          <a href="healthWealth.html">Health & Wealth</a>
+          <a href="entertainment.html">Entertainment</a>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Legal</h3>
+          <a href="termsOfServerice.html">Terms of Service</a>
+          <a href="privacyTerms.html">Privacy Policy</a>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <a href="mailto:Fitrichesweb@gmail.com">Fitrichesweb@gmail.com</a>
+          <div class="social-links" style="margin-top: 15px;">
+            <a href="https://x.com/i/flow/login" class="text-dark me-3" target="_blank" aria-label="Twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 1200 1227">
+                  <path d="M1050 0 714 525l486 702H750L480 882l-222 345H0l354-549L-30 0h504l216 339L900 0h150Zm-222 1095h126L423 132H291l537 963Z"/>
+                </svg>
+              </a>
+              <a href="https://www.facebook.com/login.php/" class="text-dark me-3" target="_blank" aria-label="Facebook">
+                <i class="bi bi-facebook" style="font-size: 1.2rem;"></i>
+              </a>
+              <a href="https://www.instagram.com/accounts/login/" class="text-dark me-3" target="_blank"
+                aria-label="Instagram">
+                <i class="bi bi-instagram" style="font-size: 1.2rem;"></i>
+              </a>
+              <a href="https://www.linkedin.com/login" class="text-dark" target="_blank" aria-label="LinkedIn">
+                <i class="bi bi-linkedin" style="font-size: 1.2rem;"></i>
+              </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>&copy; <span id="year"></span> Fitriches. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    // Set current year in copyright
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
